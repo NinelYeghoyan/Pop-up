@@ -1,0 +1,70 @@
+@import "custom";
+@import "bootstrap";
+@import "_font-size";
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+// Colors
+.gray-100 {
+  color: #808080;
+}
+
+// Modal
+.modal-360 {
+  max-width: 360px;
+}
+
+.modal-header {
+  font-family: "Roboto Condensed", sans-serif;
+  border-radius: 8px 8px 0 0;
+  @include media-breakpoint-only(xs) {
+    border-radius: 0;
+  }
+}
+
+.modal-body {
+  padding: 40px;
+  @include media-breakpoint-only(xs) {
+    padding: 24px 16px 56px 16px;
+  }
+}
+
+.modal-dialog {
+  @include media-breakpoint-only(xs) {
+    margin: 0;
+    max-width: 100%;
+    align-items: flex-start;
+  }
+}
+
+.modal-content {
+  @include media-breakpoint-only(xs) {
+    min-height: 100vh;
+    border-radius: 0;
+  }
+}
+
+.modal-body {
+  @include media-breakpoint-only(xs) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+// Input
+.custom-input {
+  border: 0;
+  border-bottom: 1px solid #cccccc;
+  padding: 10px 16px;
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+// Btn
+.custom-btn-wrapper {
+  @include media-breakpoint-only(xs) {
+    padding-top: 100%;
+  }
+}
